@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.mobile-container{
+    background-color: #a08ca0;
+    width: 400px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 400px;
+}
+
+img{
+    max-width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input{
+    background-color: #f394df;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+header button{
+    background-color: transparent;
+    color: #eee;
+    font-size: 1.5rem;
+    border: none;
+    margin-left: 10px;
+}
+
+.fav-container{
+    background-color: rgb(240, 207, 235);
+    padding: 1rem;
+    text-align: center;
+}
+
+.favmeals{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.favmeals li{
+    margin: 5px;
+    width: 75px;
+}
+
+.favmeals li img{
+    border-radius: 50%;
+    border: 2px solid  #ffffff1a;
+    box-shadow: 0 0 10px 2px #3333331a;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;   
+}
+
+.favmeals li span{
+    font-size: 0.9rem;
+}
+
+.meal{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.mealheader{
+    position: relative;
+}
+
+.mealheader .random{
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.mealheader img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.mealbody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+
+}
+
+.mealbody h4{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.mealbody .favbutton{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.mealbody .favbutton .active{
+    color: rebeccapurple;
+}
